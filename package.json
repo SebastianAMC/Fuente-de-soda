@@ -1,0 +1,23 @@
+{
+  "name": "fuente-de-soda",
+  "version": "2.0.0",
+  "description": "Desafio semana 2, sitio web y sistema de administracion fuente de soda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianAMC/fuente-de-soda.git"
+  },
+  "author": "Sebastian Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianAMC/fuente-de-soda/issues"
+  },
+  "homepage": "https://github.com/SebastianAMC/fuente-de-soda#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
