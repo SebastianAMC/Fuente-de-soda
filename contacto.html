@@ -10,65 +10,33 @@
 
     <title>Fuente de soda - Contacto</title>
 </head>
-<body style="background-image: url(img/BG2.jpg); background-size:cover; background-attachment: fixed; background-position: top ; ">
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-opacity-75">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" class="img-fluid" style="width: 75%;" alt="Logo Fuente de soda" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Carta
-              </a>
-              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-light" href="#">Sandwiches</a></li>
-                <li><a class="dropdown-item text-light" href="#">Bebestibles</a></li>                          
-                <li><a class="dropdown-item text-light" href="#">Postres</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Sucursales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  <h1 class="text-center text-light">Contacto</h1>
-  <div class="container g-3 bg-dark bg-opacity-75 w-100 p-5">
-    <form action="contacto.html" class="row w-50" method="post">
-       <div style="margin-left: 50%;">
-            <div class="col-md-12">
+
+<body style="background-image: url(img/BG2.jpg); background-size:cover; background-attachment: fixed; background-position: top;">
+  
+<div class="container bg-dark bg-opacity-75">
+  <header>
+  </header>
+
+  <main>
+
+  <h1 class="text-center text-light p-5 ">Contacto</h1>
+
+  <div class="row mb-5">
+      <form action="contacto.html" class="row w-50" method="post">
+        <div style="margin-left: 50%;">
+            <div class="col-md-12 mb-3">
               <label for="nombre" class="form-label text-light">Nombre</label>
               <input type="text" class="form-control" id="nombre" required>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-3">
               <label for="apellido" class="form-label text-light">Apellido</label>
               <input type="text" class="form-control" id="apellido" required>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-3">
               <label for="email" class="form-label text-light">E-mail</label>
               <input type="email" class="form-control" id="email" aria-describedby="validationServer03Feedback" required>
             </div>
-            <div class="col-md-12 w-50">
+            <div class="col-md-12 w-50 mb-3">
               <label for="motivo" class="form-label text-light">Motivo</label>
               <select class="form-select" id="motivo" aria-describedby="validationServer04Feedback" required>
                 <option selected disabled value="">Seleccionar</option>
@@ -78,7 +46,7 @@
                 <option>Consulta</option>
               </select>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12 mb-3">
               <label for="comentario" class="form-label text-light">Comentario</label>
               <textarea class="form-control" id="comentario" aria-describedby="validationServer05Feedback" required></textarea>
             </div>
@@ -88,53 +56,13 @@
         </div>     
     </form> 
   </div>
+  </main>
+
   <footer>
-    <div class="row">
-      <div class="col-lg-4 col-sm-12 bg-dark text-light p-5">
-      <div class="row">
-          <div class="col-12 mb-5 text-end"> <h3>Nuestras redes</h3>
-          </div>
-        </div>
-            <div class="row text-end">
-              <div class="col-6">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                <br><br>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <br><br>
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                <br><br>
-              </div>
-              <div class="col-6 text-start">
-                <a href="https://www.facebook.com" class="text-light">Facebook</a>
-                <br><br>
-                <a href="https://www.instagram.com" class="text-light">Instagram</a>
-                <br><br>
-                <a href="https://web.whatsapp.com" class="text-light">+56 9 12345678</a>
-              </div>
-            </div>
-      </div>           
-          <div class="col-4 bg-dark text-light p-5 text-center">
-            <ul class="list-group list-group-flush bg-dark text-light mt-4">
-              <li class="list-group-item bg-dark text-light"><a href="index.html" class="text-light"> Inicio</a></li>
-              <li class="list-group-item bg-dark text-light"><a href="#" class="text-light">Carta</a></li>
-              <li class="list-group-item bg-dark text-light"><a href="#" class="text-light">Nosotros</a></li>
-              <li class="list-group-item bg-dark text-light"><a href="#" class="text-light">Sucursales</a></li>
-              <li class="list-group-item bg-dark text-light"><a href="contacto.html" class="text-light">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="col-4 bg-dark text-light p-5 text-start">
-            <h3>Sucursales</h3>
-          <br>
-            Avda. Los leones 01245, Santiago.
-          <hr />
-            Alberto Hurtado 0265, local 041, Osorno.
-          <hr />
-            Tucapel 885, La Serena.
-          </div>
-    </div>
   </footer>
 </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
