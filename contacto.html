@@ -19,10 +19,10 @@
 
   <main>
 
-  <h1 class="text-center text-light p-5 ">Contacto</h1>
+  <h1 class="text-center text-light p-5" id="Contactus">Contacto</h1>
 
   <div class="row mb-5">
-      <form action="contacto.html" class="row w-50" method="post">
+      <form action="contacto.html" class="row w-50" method="get">
         <div style="margin-left: 50%;">
             <div class="col-md-12 mb-3">
               <label for="nombre" class="form-label text-light">Nombre</label>
@@ -51,7 +51,7 @@
               <textarea class="form-control" id="comentario" aria-describedby="validationServer05Feedback" required></textarea>
             </div>
             <div class="col-12 mt-5 text-center">
-              <button class="btn btn-primary" type="submit">Enviar</button>
+              <button class="btn btn-primary" type="submit" id="enviarform">Enviar</button>
             </div>
         </div>     
     </form> 
@@ -64,5 +64,6 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
 </html>
