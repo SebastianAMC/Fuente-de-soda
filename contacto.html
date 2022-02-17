@@ -22,29 +22,35 @@
   <h1 class="text-center text-light p-5" id="Contactus">Contacto</h1>
 
   <div class="row mb-5">
-      <form action="contacto.html" class="row w-50" method="get">
+      <form action="contacto.html"  id="formularioContacto" class="row w-50" method="get">
         <div style="margin-left: 50%;">
             <div class="col-md-12 mb-3">
               <label for="nombre" class="form-label text-light">Nombre</label>
               <input type="text" class="form-control" id="nombre" required>
+              <div class="text-danger d-none" id="feedback-nombre"><h1>El nombre es muy corto</h1></div>
             </div>
             <div class="col-md-12 mb-3">
               <label for="apellido" class="form-label text-light">Apellido</label>
               <input type="text" class="form-control" id="apellido" required>
+              <div class="text-danger d-none" id="feedback-apellido"><h1>El apellido es muy corto</h1></div>
             </div>
+
+
             <div class="col-md-12 mb-3">
               <label for="email" class="form-label text-light">E-mail</label>
               <input type="email" class="form-control" id="email" aria-describedby="validationServer03Feedback" required>
             </div>
+
             <div class="col-md-12 w-50 mb-3">
               <label for="motivo" class="form-label text-light">Motivo</label>
-              <select class="form-select" id="motivo" aria-describedby="validationServer04Feedback" required>
+              <select class="form-select"  id="motivo" aria-describedby="validationServer04Feedback" required>
                 <option selected disabled value="">Seleccionar</option>
                 <option>Felicitación</option>
                 <option>Reclamo</option>
                 <option>Sugerencia</option>
                 <option>Consulta</option>
               </select>
+              <div class="text-danger d-none" id="motivofeedback"><h1>Selecciona una opción valida</h1></div>
             </div>
             <div class="col-md-12 mb-3">
               <label for="comentario" class="form-label text-light">Comentario</label>

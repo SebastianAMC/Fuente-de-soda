@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuente de soda - Admin</title>
+    <title>Administración</title>
 
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <style>
+    <style> 
         @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
         @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
@@ -30,7 +28,7 @@
             bottom: -40px;
             width: auto;
             height: auto;
-            background-image: url(img/BG2.jpg);
+            background-image: url(../img/BG2.jpg);
             background-size: cover;
             -webkit-filter: blur(5px);
             filter: blur(5px);
@@ -50,25 +48,6 @@
             opacity: 0.7;
         }
 
-        .encabezado{
-            position: absolute;
-            top: calc(50% - 35px);
-            left: calc(50% - 255px);
-            z-index: 2;
-        }
-
-        .encabezado div{
-            float: left;
-            color: #fff;
-            font-family: 'Exo', sans-serif;
-            font-size: 35px;
-            font-weight: 200;
-        }
-
-        .encabezado div span{
-            color: #5379fa !important;
-        }
-
         .login{
             position: absolute;
             top: calc(50% - 75px);
@@ -77,33 +56,6 @@
             width: 350px;
             padding: 10px;
             z-index: 2;
-        }
-
-        .login input[type=text]{
-            width: 250px;
-            height: 30px;
-            background: transparent;
-            border: 1px solid rgba(255,255,255,0.6);
-            border-radius: 2px;
-            color: #fff;
-            font-family: 'Exo', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 4px;
-        }
-
-        .login input[type=password]{
-            width: 250px;
-            height: 30px;
-            background: transparent;
-            border: 1px solid rgba(255,255,255,0.6);
-            border-radius: 2px;
-            color: #fff;
-            font-family: 'Exo', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 4px;
-            margin-top: 10px;
         }
 
         .login button{
@@ -118,7 +70,7 @@
             font-size: 16px;
             font-weight: 400;
             padding: 6px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         .login button:hover{
@@ -150,32 +102,24 @@
         ::-moz-input-placeholder{
         color: rgba(255,255,255,0.6);
         }
-</style>
+    </style>
 </head>
 
 <body>
 
-    <div class="body"></div>
-		<div class="grad"></div>
-		<div class="encabezado">
-			<div>Fuente de <br> <span>Soda</span></div>
-		</div>
-		<br>
-		<div class="login">
-            <div class="alert-danger" id="mensajes"></div>
-            <form id="login-form">
-				<input type="text" placeholder="Usuario" id="usuario" name="user"><br>
-				<input type="password" placeholder="Contraseña" id="contrasena" name="password"><br>
-				<button type="submit">Ingresar</button>
-                <button><a href=index.html style="text-decoration: none; color: #a18d6c;">Regresar</a></button>
-            </form>
-		</div>
+    <div class="container body "></div>
+        <div class="grad"></div>
+      <div class="login"> 
+    <button ><a href=comandas.html style="text-decoration: none; color: #a18d6c;">Comandas</a></button>
+    <button><a href=ventas.html style="text-decoration: none; color: #a18d6c;">Ventas</a></button>
+    <br/><br/><br/><br/>
+    <button class="mt-5"><a href=../index.html style="text-decoration: none; color: #a18d6c;">Volver</a></button>
+    </div>
+    
+    
+</body>
 
-
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="js/script.js"></script> 
-        <script src="admin/login.js"></script>
-    </body>
-
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../js/script.js"></script>
 </html>
