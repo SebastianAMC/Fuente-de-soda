@@ -14,7 +14,7 @@ document.getElementById("login-form").addEventListener("submit", (submitEvent) =
 });
 
 function accederAdministracion() {
-    window.location = "../admin/admin.html";
+    window.location = "/admin/admin.html";
 }
 
 function mostrarMensajeError() {
